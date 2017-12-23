@@ -19,9 +19,9 @@ with open('calls.csv', 'r') as f:
 "First record of texts, <incoming number> texts <answering number> at time <time>"
 "Last record of calls, <incoming number> calls <answering number> at time <time>, lasting <during> seconds"
 """
-firstText = texts[0]
-lastCall = calls[-1]
+first_text = texts[0]
+last_call = calls[-1]
 
-print("First record of texts, {0} texts {1} at time {2}".format(firstText[0], firstText[1], firstText[2]))
-print("Last record of calls, {0} calls {1} at time {2}, lasting {3} seconds".format(lastCall[0], lastCall[1], lastCall[2], lastCall[3]))
+print("First record of texts, {0} texts {1} at time {2}".format(first_text[0], first_text[1], first_text[2]))
+print("Last record of calls, {0} calls {1} at time {2}, lasting {3} seconds".format(last_call[0], last_call[1], last_call[2], last_call[3]))
 
