@@ -23,3 +23,21 @@ September 2016.".
 如果键不存在于字典内，将此键加入字典，并将它的值设为给定值。
 """
 
+times_for_each_number = {}
+
+for call in calls:
+	time = times_for_each_number.get(call[0],0)
+	times_for_each_number[call[0]] = time + int(call[3])
+	time = times_for_each_number.get(call[1],0)
+	times_for_each_number[call[1]] = time + int(call[3])
+
+max_time = 0
+max_time_number = None
+
+for number in times_for_each_number:
+	time = times_for_each_number[number]
+	if time>max_time:
+		max_time = time
+		max_time_number = number
+
+print("{0} spent the longest time, {1} seconds, on the phone during September 2016.".format(max_time_number, max_time))
