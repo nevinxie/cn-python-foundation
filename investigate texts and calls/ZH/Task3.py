@@ -39,3 +39,35 @@ with open('calls.csv', 'r') as f:
 to other fixed lines in Bangalore."
 注意：百分比应包含2位小数。
 """
+
+def find_region_code(number):
+	code = None
+	if number.startswith("("):
+		end_of_brace = number.find(")")
+		code = number[1:end_of_brace]
+	elif " " in number:
+		code = number[0:4]
+	elif number.startswith("140"):
+		code = "140"
+	return code			
+
+receive_codes_from_Bangalore = set()
+count_of_call_from_Bangalore = 0
+count_of_call_between_Bangalore = 0
+
+for call in calls:
+	fromNumber = call[0]
+	toNumber = call[1]
+	if fromNumber[:5] == "(080)":
+		count_of_call_from_Bangalore+=1
+		region_code = find_region_code(toNumber)
+		receive_codes_from_Bangalore.add(region_code)
+	if fromNumber[:5] == "(080)" and toNumber[:5] == "(080)":
+		count_of_call_between_Bangalore+=1	
+
+print("The numbers called by people in Bangalore have codes:")
+print(receive_codes_from_Bangalore)
+
+formatted_percentage = count_of_call_between_Bangalore/count_of_call_from_Bangalore
+
+print("{:.2%} percent of calls from fixed lines in Bangalore are calls to other fixed lines in Bangalore.".format(formatted_percentage))
