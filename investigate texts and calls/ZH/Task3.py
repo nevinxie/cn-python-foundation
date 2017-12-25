@@ -66,7 +66,9 @@ for call in calls:
 		count_of_call_between_Bangalore+=1	
 
 print("The numbers called by people in Bangalore have codes:")
-print(receive_codes_from_Bangalore)
+
+for code in receive_codes_from_Bangalore:
+	print(code)
 
 formatted_percentage = count_of_call_between_Bangalore/count_of_call_from_Bangalore
 
