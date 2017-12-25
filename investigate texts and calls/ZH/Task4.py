@@ -26,3 +26,24 @@ with open('calls.csv', 'r') as f:
 电话号码不能重复，每行打印一条，按字典顺序排序后输出。
 """
 
+number_received_call = set()
+number_sent_or_received_text = set()
+number_make_call_out = set()
+suspected_tele_marketer = set()
+
+for text in texts:
+	number_sent_or_received_text.add(text[0])
+	number_sent_or_received_text.add(text[1]) 
+
+for call in calls:
+	number_make_call_out.add(call[0])
+	number_received_call.add(call[1])
+
+for number in number_make_call_out:
+	if (number not in number_received_call
+		and number not in number_sent_or_received_text):
+		suspected_tele_marketer.add(number)
+
+print("These numbers could be telemarketers: ")
+for number in suspected_tele_marketer:
+	print(number)
