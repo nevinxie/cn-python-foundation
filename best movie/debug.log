@@ -1,0 +1,6 @@
+[1227/115223.663:ERROR:file_io_win.cc(179)] CreateFile C:\Program Files (x86)\temp\settings.dat: 拒绝访问。 (0x5)
+[1227/115223.668:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: 管道已结束。 (0x6D)
+[1227/115223.669:ERROR:file_io_win.cc(179)] CreateFile C:\Program Files (x86)\temp\settings.dat: 拒绝访问。 (0x5)
+[1227/115241.072:ERROR:file_io_win.cc(179)] CreateFile C:\Program Files (x86)\temp\settings.dat: 拒绝访问。 (0x5)
+[1227/115241.076:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: 管道已结束。 (0x6D)
+[1227/115241.078:ERROR:file_io_win.cc(179)] CreateFile C:\Program Files (x86)\temp\settings.dat: 拒绝访问。 (0x5)
