@@ -65,9 +65,12 @@ for call in calls:
 	if fromNumber[:5] == "(080)" and toNumber[:5] == "(080)":
 		count_of_call_between_Bangalore+=1	
 
+sorted_receive_codes_from_Bangalore = list(receive_codes_from_Bangalore)
+sorted_receive_codes_from_Bangalore.sort()
+
 print("The numbers called by people in Bangalore have codes:")
 
-for code in receive_codes_from_Bangalore:
+for code in sorted_receive_codes_from_Bangalore:
 	print(code)
 
 formatted_percentage = count_of_call_between_Bangalore/count_of_call_from_Bangalore

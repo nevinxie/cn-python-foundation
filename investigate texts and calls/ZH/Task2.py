@@ -34,10 +34,6 @@ for call in calls:
 max_time = 0
 max_time_number = None
 
-for number in times_for_each_number:
-	time = times_for_each_number[number]
-	if time>max_time:
-		max_time = time
-		max_time_number = number
+max_time_number, max_time = max(times_for_each_number.items(), key=lambda x:x[1])
 
 print("{0} spent the longest time, {1} seconds, on the phone during September 2016.".format(max_time_number, max_time))

@@ -44,6 +44,9 @@ for number in number_make_call_out:
 		and number not in number_sent_or_received_text):
 		suspected_tele_marketer.add(number)
 
+sorted_suspected_tele_marketer = list(suspected_tele_marketer)
+sorted_suspected_tele_marketer.sort()
+
 print("These numbers could be telemarketers: ")
-for number in suspected_tele_marketer:
+for number in sorted_suspected_tele_marketer:
 	print(number)
