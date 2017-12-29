@@ -1,0 +1,12 @@
+Top 3 locations for category 剧情 are: 
+大陆 has 20 movies which occupy 7.12% of total.
+美国 has 20 movies which occupy 7.12% of total.
+台湾 has 20 movies which occupy 7.12% of total.
+Top 3 locations for category 动作 are: 
+美国 has 20 movies which occupy 17.70% of total.
+日本 has 20 movies which occupy 17.70% of total.
+英国 has 18 movies which occupy 15.93% of total.
+Top 3 locations for category 爱情 are: 
+大陆 has 20 movies which occupy 10.36% of total.
+美国 has 20 movies which occupy 10.36% of total.
+日本 has 20 movies which occupy 10.36% of total.
